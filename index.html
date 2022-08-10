@@ -8,28 +8,65 @@
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <link rel="preload" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <main class="main">
+    <div class="card">
+      <div class="card--head">
+        <img src="./images/illustration-woman-online-mobile.svg" alt="">
+      </div>
+      <h1 class="card--title">FAQ</h1>
+      
+      <div id="card--description">
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <div id="card--section">
+          <p class="section--question">How many team members can I invite? <span><img id='answer-arrow-1' class="icon" src="./images/icon-arrow-down.svg" alt=""></span> </p>
+          <p id="answer-1" class="active section--answer__style">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </p>
+          <div class="line"></div>
+        </div>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+        <div id="card--section">
+          <p class="section--question">What is the maximum file upload size? <span><img id='answer-arrow-2' class="icon" src="./images/icon-arrow-down.svg" alt=""></span></p>
+          <p id="answer-2" class="active section--answer__style">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          <div class="line"></div>
+        </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+        <div id="card--section">
+          <p class="section--question">How do I reset my password? <span><img id='answer-arrow-3' class="icon" src="./images/icon-arrow-down.svg" alt=""></span></p>
+          <p id="answer-3" class="active section--answer__style">
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+          <div class="line"></div>
+        </div>
+        
+        <div id="card--section"">
+          <p class="section--question">Can I cancel my subscription? <span><img id='answer-arrow-4' class="icon" src="./images/icon-arrow-down.svg" alt=""></span> </p>
+          <p id="answer-4" class="active section--answer__style">Yes! Send us a message and we’ll process your request no questions asked.</p>
+         <div class="line"></div>
+        </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        <div id="card--section">
+          <p class="section--question">Do you provide additional support? <span><img id='answer-arrow-5' class="icon" src="./images/icon-arrow-down.svg" alt=""></span></p>
+          <p id="answer-5" class="active section--answer__style">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          <div class="line"></div>
+        </div>
+        
+      </div>
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
+  
+  <script src="./index.js"></script>
 </body>
 </html>
