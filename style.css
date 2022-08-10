@@ -73,16 +73,12 @@ h1{
     background-size: 15rem;
 }
 
-.card--head{
+.card--head__center{
     position: relative;
 }
 
-.img--back--background{
+.card--head__center img{
 
-}
-
-
-.card--head img{
     position: absolute;
     top: -6.6rem;
     left: 50%;
@@ -146,4 +142,34 @@ h1{
 
 .active{
     display: none;
+}
+
+.desktop{
+    display: none;
+}
+
+@media (min-width: 980px) {
+    .card--head .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+     .card{
+        padding: 3rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: none;
+        background-size: 15rem;
+     }
+     
+     .card--title{
+        text-align: start;
+        padding-top: 0rem;
+    }    
 }

@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 
-  <link rel="preload" href="./style.css">
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -20,11 +19,18 @@
   <main class="main">
     <div class="card">
       <div class="card--head">
-        <img src="./images/illustration-woman-online-mobile.svg" alt="">
+        <div>
+          <img class="desktop" src="./images/bg-pattern-desktop.svg" alt="">
+          <img class="desktop" src="./images/illustration-woman-online-desktop.svg" alt="">
+        </div>
+        
+        <div class="card--head__center">  
+          <img class="mobile" src="./images/illustration-woman-online-mobile.svg" alt="">
+        </div>
       </div>
-      <h1 class="card--title">FAQ</h1>
       
       <div id="card--description">
+        <h1 class="card--title">FAQ</h1>
 
         <div id="card--section">
           <p class="section--question">How many team members can I invite? <span><img id='answer-arrow-1' class="icon" src="./images/icon-arrow-down.svg" alt=""></span> </p>
