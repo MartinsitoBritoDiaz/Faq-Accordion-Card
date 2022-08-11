@@ -1,4 +1,4 @@
-const elements = document.querySelectorAll('#card--description #card--section');
+const elements = document.querySelectorAll('#card--description .card--section');
 
 elements.forEach((element, i) => {
 
