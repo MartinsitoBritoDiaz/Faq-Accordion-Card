@@ -118,28 +118,6 @@ h1{
 
 #card--section:hover{ cursor: pointer; }
 
-footer{
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-}
-
-footer a{
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-footer a:hover{
-    color: var(--Light-gray);
-}
-
-footer a:visited{
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-}
-
 @media (min-width: 980px) {
     body{
         padding: 0;
