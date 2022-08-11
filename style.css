@@ -28,13 +28,9 @@
 
 html{ box-sizing: border-box; }
 
-*, *::before, *::after{
-    box-sizing: inherit;
-}
+*, *::before, *::after{ box-sizing: inherit; }
 
-img{
-    max-width: 100%;
-}
+img{ max-width: 100%; }
 
 body{
     font-family: var(--font-primary);
@@ -47,8 +43,6 @@ body{
 
     background-image: linear-gradient(var(--Soft-violet), var(--Soft-blue));
     background-attachment: fixed;
-    
-    overflow:scroll;
 }
 
 h1{
@@ -73,12 +67,9 @@ h1{
     background-size: 15rem;
 }
 
-.card--head__center{
-    position: relative;
-}
+.card--head__center{ position: relative; }
 
 .card--head__center img{
-
     position: absolute;
     top: -6.6rem;
     left: 50%;
@@ -89,24 +80,12 @@ h1{
     max-width: 15rem;
 }
 
-.card--title{
-    padding-top: 8rem;
-}
-
-#card--section-1:hover{
-    cursor: pointer;
-}
+.card--title{ padding-top: 8rem; }
 
 .section--question{
-    font-weight: 600;
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
-    color: var(--Dark-grayish-blue)
-}
-
-.section--question{
-    font-weight: bold;
-    font-size: 13px;
     color: var(--Very-dark-desaturated-blue);
 }
 
@@ -122,42 +101,62 @@ h1{
 }
 
 .section--answer__style{
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.1rem;
     text-align: start;
     color: var(--Dark-grayish-blue);
 }
 
-.section--answer-1,
-.section--answer-2,
-.section--answer-3,
-.section--answer-4,
-.section--answer-5{
-    display: none;
+.flip{ transform: scaleY(-1); }
+
+.desktop, .box, .active{ display: none; }
+
+.font--color{
+    font-weight: bold;
+    color: black;
 }
 
-.flip{
-    transform: scaleY(-1);
-}
-
-.active{
-    display: none;
-}
-
-.desktop{
-    display: none;
-}
+#card--section:hover{ cursor: pointer; }
 
 @media (min-width: 980px) {
-    .card--head .mobile{
-        display: none;
+    body{
+        padding: 0;
+        height: 100vh;
     }
 
-    .desktop{
+    .card--head .mobile{ display: none; }
+
+    .desktop{ display: block; }
+
+    .card--head__left .woman,
+    .card--head__left .pattern{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: auto;
         display: block;
+        max-width: 40rem;
+    }
+    
+    .card--head__left .pattern{
+        transform: translate(-50%,-27%);
+        height: 45rem;
+        width: 40rem;
     }
 
-     .card{
+    .card--head__left .woman{
+        transform: translate(-17%,23%);
+        height: auto;
+        width: 24rem;
+    }
+
+    .card--head__left .box{
+        transform: translate(-90%,65%);
+        position: fixed;
+    }
+
+    .card{
         padding: 3rem 5rem;
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -166,10 +165,13 @@ h1{
         background-repeat: no-repeat;
         background-position: none;
         background-size: 15rem;
-     }
-     
-     .card--title{
+        overflow: hidden;
+    }
+    
+    .card--title{
         text-align: start;
         padding-top: 0rem;
-    }    
+    }
+
+    #card--description{ padding-right: 1rem; }
 }
